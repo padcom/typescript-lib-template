@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config'
 import eslint from 'vite-plugin-eslint'
 import dts from 'vite-plugin-dts'
 
-import pkg from './package.json' assert { type: 'json' }
+import pkg from './package.json' with { type: 'json' }
 
 export default defineConfig({
   plugins: [
